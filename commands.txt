@@ -1,0 +1,13 @@
+create table user (id bigserial not null, email varchar(255),
+ first_name varchar(255), is_enabled boolean not null,
+ last_name varchar(255), password varchar(255), role varchar(255), primary key (id))
+
+{
+    "firstName": "roman",
+    "lastName": "roman",
+    "email": "roman@roman.com",
+    "password": "roman",
+    "role": "USER"
+
+  }
+

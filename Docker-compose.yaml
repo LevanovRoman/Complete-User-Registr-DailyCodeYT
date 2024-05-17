@@ -1,0 +1,15 @@
+version: '3'
+services:
+  dbpostgres:
+    image: mysql
+    volumes:
+      - ./registration_db-data:/var/lib/postgresql/data
+    ports:
+      - "5353:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: registration_db
+
+volumes:
+  registration_db-data:
